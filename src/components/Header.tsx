@@ -13,7 +13,7 @@ export default function Header() {
         <Link className="text-sm font-medium leading-normal text-primary hover:text-accent-light-blue transition-colors" href="/">
           Home
         </Link>
-        <Link className="text-sm font-medium leading-normal text-primary hover:text-accent-light-blue transition-colors" href="#">
+        <Link className="text-sm font-medium leading-normal text-primary hover:text-accent-light-blue transition-colors" href="/about">
           About
         </Link>
         <SectorsDropdown />

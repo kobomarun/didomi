@@ -10,7 +10,7 @@ export interface SectorLink extends NavLink {
 
 export const MAIN_NAV_LINKS: NavLink[] = [
   { name: "Home", href: "/" },
-  { name: "About", href: "#" },
+  { name: "About", href: "/about" },
   { name: "Contact", href: "#" },
 ];
 
@@ -42,9 +42,9 @@ export const SECTORS_NAV_LINKS: SectorLink[] = [
 ];
 
 export const CONTACT_INFO = {
-  address: "123 Innovation Drive, Tech City",
-  email: "contact@didomi.co",
-  phone: "+1 (555) 123-4567",
+  address: "6, Soji Adepegba close Allen Avenue, Ikeja Lagos Nigeria.",
+  email: "info@didomiconsortium.com",
+  phones: ["0807 116 7839", "0915 637 7772"],
 };
 
 export const SOCIAL_LINKS = [

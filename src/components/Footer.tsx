@@ -27,11 +27,13 @@ export default function Footer() {
                 {CONTACT_INFO.email}
               </a>
             </li>
-            <li>
-              <a href={`tel:${CONTACT_INFO.phone}`} className="hover:text-accent-light-blue transition-colors">
-                {CONTACT_INFO.phone}
-              </a>
-            </li>
+            {CONTACT_INFO.phones.map((phone) => (
+              <li key={phone}>
+                <a href={`tel:${phone.replace(/\s/g, "")}`} className="hover:text-accent-light-blue transition-colors">
+                  {phone}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 
