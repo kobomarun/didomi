@@ -38,28 +38,7 @@ const IndustrySection = ({ industry, index }: IndustrySectionProps) => {
                   {/* Overlay Gradient */}
                   <div className={`absolute inset-0 bg-gradient-to-t ${industry.color === "accent-light-blue" ? "from-primary/90 to-transparent" : "from-accent-soft-green/90 to-transparent"} opacity-60`} />
                   
-                  {/* Floating Stats Card */}
-                  <div className="absolute bottom-6 left-6 right-6">
-                      <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-white/20">
-                          <div className="flex items-center gap-4">
-                              <div className={`w-12 h-12 ${bgColorClass} rounded-full flex items-center justify-center`}>
-                                  <span className={`material-symbols-outlined text-2xl ${colorClass}`}>
-                                      {industry.icon}
-                                  </span>
-                              </div>
-                              <div>
-                                  <div className="flex items-baseline gap-2">
-                                      <span className={`text-2xl font-black ${colorClass}`}>
-                                          {industry.stats.value}
-                                      </span>
-                                      <span className="text-slate-600 text-sm font-medium">
-                                          {industry.stats.label}
-                                      </span>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+                  {/* Removed Stats Card */}
                 </div>
                 
                 {/* Decorative elements */}
@@ -76,7 +55,7 @@ const IndustrySection = ({ industry, index }: IndustrySectionProps) => {
                     {industry.title} Sector
                   </span>
                   <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4">
-                    Empowering {industry.title} Excellence
+                    {industry.id === 'agriculture' ? industry.title : `Empowering ${industry.title} Excellence`}
                   </h2>
                   <p className="text-lg md:text-xl text-slate-700 leading-relaxed">
                     {industry.description}

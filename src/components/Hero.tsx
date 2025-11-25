@@ -56,16 +56,6 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-            
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <button className="px-8 py-4 bg-white text-primary rounded-lg font-semibold text-base hover:bg-white/95 transition-all duration-200 shadow-lg hover:shadow-xl">
-                Start Your Project
-              </button>
-              <button className="px-8 py-4 bg-transparent border-2 border-white/30 text-white rounded-lg font-semibold text-base hover:bg-white/10 hover:border-white/50 transition-all duration-200">
-                Explore Solutions
-              </button>
-            </div>
           </div>
           
           {/* Right Column: Visual Elements */}
@@ -108,25 +98,7 @@ export default function Hero() {
                     <p className="text-white font-semibold text-sm">Safety</p>
                   </div>
                 </div>
-                
-                {/* Stats Bar */}
-                <div className="mt-8 pt-8 border-t border-white/20">
-                  <div className="flex justify-around text-center">
-                    <div>
-                      <p className="text-2xl font-bold text-white">500+</p>
-                      <p className="text-white/70 text-xs mt-1">Projects</p>
-                    </div>
-                    <div>
-                      <p className="text-2xl font-bold text-white">50+</p>
-                      <p className="text-white/70 text-xs mt-1">Countries</p>
-                    </div>
-                    <div>
-                      <p className="text-2xl font-bold text-white">10K+</p>
-                      <p className="text-white/70 text-xs mt-1">Clients</p>
-                    </div>
-                  </div>
                 </div>
-              </div>
               
               {/* Decorative Elements */}
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-accent-light-blue/20 rounded-full blur-xl" />

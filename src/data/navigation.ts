@@ -42,9 +42,19 @@ export const SECTORS_NAV_LINKS: SectorLink[] = [
 ];
 
 export const CONTACT_INFO = {
-  address: "6, Soji Adepegba close Allen Avenue, Ikeja Lagos Nigeria.",
-  email: "info@didomiconsortium.com",
-  phones: ["0807 116 7839", "0915 637 7772"],
+  email: "adekola.joseph@didomiconsortium.com",
+  offices: [
+    {
+      name: "United Kingdom Office",
+      address: "10 Royal Lane, West Drayton UB7 8DL, United Kingdom",
+      phone: "+44 7506 186439",
+    },
+    {
+      name: "Nigeria Office",
+      address: "No. 59, Oduduwa Way, GRA Ikeja, Lagos, Nigeria",
+      phone: "0814 547 4977",
+    },
+  ],
 };
 
 export const SOCIAL_LINKS = [

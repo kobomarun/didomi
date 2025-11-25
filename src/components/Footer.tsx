@@ -4,7 +4,7 @@ import { CONTACT_INFO, SOCIAL_LINKS } from "@/data/navigation";
 
 export default function Footer() {
   return (
-    <footer className="bg-primary w-full">
+    <footer id="footer" className="bg-primary w-full">
       <div className="max-w-6xl mx-auto px-6 sm:px-10 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Left Column: Branding and Mission Statement */}
@@ -20,21 +20,28 @@ export default function Footer() {
         {/* Middle Column: Contact Information */}
         <div>
           <h3 className="font-bold mb-4 text-white uppercase tracking-wide text-sm">Contact</h3>
-          <ul className="space-y-2 text-sm text-white/90">
-            <li>{CONTACT_INFO.address}</li>
-            <li>
+          <div className="space-y-4 text-sm text-white/90">
+            {/* Email */}
+            <div>
               <a href={`mailto:${CONTACT_INFO.email}`} className="hover:text-accent-light-blue transition-colors">
                 {CONTACT_INFO.email}
               </a>
-            </li>
-            {CONTACT_INFO.phones.map((phone) => (
-              <li key={phone}>
-                <a href={`tel:${phone.replace(/\s/g, "")}`} className="hover:text-accent-light-blue transition-colors">
-                  {phone}
+            </div>
+            
+            {/* Offices */}
+            {CONTACT_INFO.offices.map((office, index) => (
+              <div key={index} className="space-y-1">
+                <p className="font-semibold text-white">{office.name}</p>
+                <p className="text-white/80">{office.address}</p>
+                <a 
+                  href={`tel:${office.phone.replace(/\s/g, "")}`} 
+                  className="hover:text-accent-light-blue transition-colors block"
+                >
+                  {office.phone}
                 </a>
-              </li>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
 
         {/* Right Column: Follow Us */}

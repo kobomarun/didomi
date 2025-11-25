@@ -62,7 +62,7 @@ export const INDUSTRIES: Industry[] = [
   },
   {
     id: "agriculture",
-    title: "Agriculture",
+    title: "Didomi Farm",
     icon: "eco",
     color: "accent-soft-green",
     bgGradient: "bg-accent-soft-green/5",
@@ -77,7 +77,7 @@ export const INDUSTRIES: Industry[] = [
       label: "Farms Supported",
       value: "10K+",
     },
-    cta: "Explore Agriculture Solutions",
+    cta: "Explore Didomi Farms",
     href: "/agriculture",
     image: "/images/agriculture.png",
   },
