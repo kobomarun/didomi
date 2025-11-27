@@ -38,7 +38,7 @@ export const INDUSTRIES: Industry[] = [
     },
     cta: "Explore Education Solutions",
     href: "/education",
-    image: "/images/education-logo.jpg",
+    image: "/images/education.jpg",
     isLogo: true,
   },
   {
@@ -60,7 +60,7 @@ export const INDUSTRIES: Industry[] = [
     },
     cta: "Explore Technology Solutions",
     href: "/it-solutions",
-    image: "/images/technology-logo.png",
+    image: "/images/technology.png",
     isLogo: true,
   },
   {
@@ -82,7 +82,7 @@ export const INDUSTRIES: Industry[] = [
     },
     cta: "Explore Didomi Farms",
     href: "/agriculture",
-    image: "/images/agriculture-logo.png",
+    image: "/images/farm-cultivation.png",
     isLogo: true,
   },
   {
