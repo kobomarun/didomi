@@ -15,6 +15,7 @@ export interface Industry {
   cta: string;
   href: string;
   image: string;
+  isLogo?: boolean;
 }
 
 export const INDUSTRIES: Industry[] = [
@@ -37,7 +38,8 @@ export const INDUSTRIES: Industry[] = [
     },
     cta: "Explore Education Solutions",
     href: "/education",
-    image: "/images/education.png",
+    image: "/images/education-logo.jpg",
+    isLogo: true,
   },
   {
     id: "technology",
@@ -58,7 +60,8 @@ export const INDUSTRIES: Industry[] = [
     },
     cta: "Explore Technology Solutions",
     href: "/it-solutions",
-    image: "/images/technology.png",
+    image: "/images/technology-logo.png",
+    isLogo: true,
   },
   {
     id: "agriculture",
@@ -79,7 +82,8 @@ export const INDUSTRIES: Industry[] = [
     },
     cta: "Explore Didomi Farms",
     href: "/agriculture",
-    image: "/images/agriculture.png",
+    image: "/images/agriculture-logo.png",
+    isLogo: true,
   },
   {
     id: "safety",
@@ -100,6 +104,7 @@ export const INDUSTRIES: Industry[] = [
     },
     cta: "Explore Safety Solutions",
     href: "/safety",
-    image: "/images/safety.png",
+    image: "/images/safety-logo.png",
+    isLogo: true,
   },
 ];

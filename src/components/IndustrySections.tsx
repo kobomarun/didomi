@@ -32,7 +32,7 @@ const IndustrySection = ({ industry, index }: IndustrySectionProps) => {
                     src={industry.image}
                     alt={`${industry.title} visual`}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className={`${industry.isLogo ? "object-contain p-8" : "object-cover"} transition-transform duration-500 group-hover:scale-105`}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                   {/* Overlay Gradient */}

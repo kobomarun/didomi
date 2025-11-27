@@ -1,13 +1,44 @@
+"use client";
+
 import Logo from "./Logo";
 import SectorsDropdown from "./SectorsDropdown";
 import Link from "next/link";
-import { MAIN_NAV_LINKS } from "@/data/navigation";
+import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 export default function Header() {
+  const pathname = usePathname();
+  const isSafetyPage = pathname?.startsWith("/safety");
+  const isEducationPage = pathname?.startsWith("/education");
+  const isTechnologyPage = pathname?.startsWith("/it-solutions");
+  const isAgriculturePage = pathname?.startsWith("/agriculture");
+
+  const getLogo = () => {
+    if (isSafetyPage) return "/images/safety-logo.png";
+    if (isEducationPage) return "/images/education-logo.jpg";
+    if (isTechnologyPage) return "/images/technologylogo.png";
+    if (isAgriculturePage) return "/images/didomi-farm.png";
+    return null;
+  };
+
+  const currentLogo = getLogo();
+
   return (
     <header className="flex items-center whitespace-nowrap border-b border-solid border-border-light px-6 sm:px-10 py-4 sticky top-0 z-50 bg-white/80 backdrop-blur-sm shadow-sm">
       <Link href="/" className="flex items-center">
-        <Logo textSize="sm" iconSize={36} className="flex-row gap-3" />
+        {currentLogo ? (
+          <div className="relative h-12 w-48">
+            <Image
+              src={currentLogo}
+              alt="Didomi Logo"
+              fill
+              className="object-contain object-left"
+              priority
+            />
+          </div>
+        ) : (
+          <Logo textSize="sm" iconSize={36} className="flex-row gap-3" />
+        )}
       </Link>
       <nav className="hidden md:flex flex-1 justify-center gap-8 items-center mx-8">
         <Link className="text-sm font-medium leading-normal text-primary hover:text-accent-light-blue transition-colors" href="/">
