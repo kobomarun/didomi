@@ -42,7 +42,7 @@ export const SECTORS_NAV_LINKS: SectorLink[] = [
 ];
 
 export const CONTACT_INFO = {
-  email: "info@didomicomsortium.c",
+  email: "info@didomicomsortium.com",
   offices: [
     {
       name: "United Kingdom Office",
